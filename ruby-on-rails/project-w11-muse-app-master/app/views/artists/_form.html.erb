@@ -1,0 +1,19 @@
+<%= form_for @artist do |f| %>
+    <div class="input-field col s6">
+        <%= f.label :name, 'Name'%>
+        <%= f.text_field :name%>
+    </div>
+    <div class="input-field col s6">
+        <%= f.label :albums, 'Albums' %>
+        <%= f.text_field :albums %>
+    </div>
+    <div class="input-field col s6">
+        <%= f.label :hometown, 'Hometown' %>
+        <%= f.text_field :hometown %>
+    </div>
+    <div class="input-field col s6">
+        <%= f.label :img, 'Image' %>
+        <%= f.text_field :img %>
+    </div>
+    <%= f.submit "Submit", :class => "btn waves-effect waves-light" %>
+  <% end %>

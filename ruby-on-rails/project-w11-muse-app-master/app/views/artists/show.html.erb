@@ -1,0 +1,15 @@
+<h1><%= @artist.name %> Songs</h1>
+<%= link_to "New Song", new_song_path(:artist_id => @artist.id), { :class => "button waves-effect waves-light btn" } %>
+<br><br>
+
+<div class="row">
+  <% @songs.each do |song| %>
+
+      <div class="card-panel grey lighten-2 col s4" style="margin: 10px">
+        <%= image_tag(@artist.img, size: "100x100", alt: "Artist Image") %>
+        <br>
+        <strong><%= link_to song.title %></strong>
+        <em><%= song.genre %></em>
+      </div>
+  <% end %>
+</div>

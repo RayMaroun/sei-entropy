@@ -1,0 +1,2 @@
+def Rectangle
+end
